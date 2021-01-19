@@ -1,0 +1,70 @@
+ul {
+    transform: translate(-40px, -16px);
+}
+
+/*eliminates the bullet points*/
+li {
+    list-style: none;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    width: 100%;
+    position: fixed;
+    background-color: darkcyan;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    width: 80px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgb(0, 100, 100);
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .topnav a:not(.active) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon.
+ This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .topnav.responsive a.icon {
+        position: absolute;
+        display: '';
+        top: 0;
+        right: 0;
+        width: 80px;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        width: 100vw;
+    }
+}

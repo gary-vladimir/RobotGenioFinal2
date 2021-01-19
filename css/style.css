@@ -1,0 +1,16 @@
+@import url('navBar.css');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0px;
+}
+
+section {
+    padding-top: 50px;
+    border: 1px solid red;
+    height: 50vh;
+}
